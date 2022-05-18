@@ -1,0 +1,65 @@
+[
+    {
+        "_id": "628297a95cec8230f5077b89",
+        "name": "apple",
+        "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
+        "description": "lorem20",
+        "price": 200,
+        "quantity": 2,
+        "supplier": "Pran Limited"
+    },
+    {
+        "_id": "628297a96846749bbbafaf32",
+        "name": "mango",
+        "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
+        "description": "lorem20",
+        "price": 200,
+        "quantity": 2,
+        "supplier": "Pran Limited"
+    },
+    {
+        "_id": "628297a98c6a12184ebea1e9",
+        "name": "mango",
+        "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
+        "description": "lorem20",
+        "price": 200,
+        "quantity": 2,
+        "supplier": "Pran Limited"
+    },
+    {
+        "_id": "628297a99c89d5381a7bfe49",
+        "name": "mango",
+        "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
+        "description": "lorem20",
+        "price": 200,
+        "quantity": 2,
+        "supplier": "Pran Limited"
+    },
+    {
+        "_id": "628297a93bfb24dd87270c0d",
+        "name": "mango",
+        "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
+        "description": "lorem20",
+        "price": 200,
+        "quantity": 2,
+        "supplier": "Pran Limited"
+    },
+    {
+        "_id": "628297a91a961d3c97628cfb",
+        "name": "mango",
+        "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
+        "description": "lorem20",
+        "price": 200,
+        "quantity": 2,
+        "supplier": "Pran Limited"
+    },
+    {
+        "_id": "628297a9594f205312ea0b9d",
+        "name": "mango",
+        "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
+        "description": "lorem20",
+        "price": 200,
+        "quantity": 2,
+        "supplier": "Pran Limited"
+    }
+]

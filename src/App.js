@@ -8,6 +8,10 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import Footer from './Pages/Shared/Footer/Footer';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
+import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import Inventory from './Pages/Inventory/Inventory';
+import ItemDetails from './Pages/ItemDetails/ItemDetails';
+
 
 
 function App() {
@@ -17,6 +21,14 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/inventory' element={<Inventory></Inventory>}></Route>
+        <Route path='/inventoryItem/:itemId' element={<ItemDetails></ItemDetails>}></Route>
+        {/* <Route path='/inventoryItem/:itemId' element={
+          <RequireAuth>
+            <Inventory></Inventory>
+          </RequireAuth>}>
+
+        </Route> */}
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
