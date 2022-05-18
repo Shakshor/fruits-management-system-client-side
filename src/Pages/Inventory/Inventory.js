@@ -3,6 +3,7 @@ import useItems from '../../hooks/useItems';
 import InventoryItem from '../InventoryItem/InventoryItem';
 import './Inventory.css';
 
+
 const Inventory = () => {
     // custom hook
     const [items, setItems] = useItems();

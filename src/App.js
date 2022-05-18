@@ -13,7 +13,6 @@ import Inventory from './Pages/Inventory/Inventory';
 import ItemDetails from './Pages/ItemDetails/ItemDetails';
 
 
-
 function App() {
   return (
     <div>
@@ -22,13 +21,18 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/inventory' element={<Inventory></Inventory>}></Route>
-        <Route path='/inventoryItem/:itemId' element={<ItemDetails></ItemDetails>}></Route>
-        {/* <Route path='/inventoryItem/:itemId' element={
+        {/* <Route path='home/inventoryItem/:itemId' element={<ItemDetails></ItemDetails>}></Route> */}
+        <Route path='/inventory/inventoryItem/:itemId' element={
           <RequireAuth>
-            <Inventory></Inventory>
+            <ItemDetails></ItemDetails>
+          </RequireAuth>}>
+        </Route>
+        <Route path='/inventoryItem/:itemId' element={
+          <RequireAuth>
+            <ItemDetails></ItemDetails>
           </RequireAuth>}>
 
-        </Route> */}
+        </Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
