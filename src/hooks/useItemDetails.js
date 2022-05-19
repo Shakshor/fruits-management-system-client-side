@@ -6,7 +6,14 @@ const useItemDetails = itemId => {
 
     // loading the item data
     useEffect(() => {
+        const url = `http://localhost:5000/item/${itemId}`;
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setItem(data));
 
-    }, [itemId])
+    }, [itemId]);
+    return [item, setItem];
 
 }
+
+export default useItemDetails;
