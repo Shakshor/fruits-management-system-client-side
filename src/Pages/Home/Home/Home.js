@@ -21,7 +21,7 @@ const Home = () => {
                     }
                 </div>
                 <div className='text-center'>
-                    <button className='btn btn-primary m-5 p-2 w-25' onClick={() => navigate('/inventory')}>See All Items</button>
+                    <button className='btn btn-primary m-5 p-2 w-25' onClick={() => navigate('/manage')}>Manage Inventory</button>
                 </div>
             </section>
         </div>

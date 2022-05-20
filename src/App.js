@@ -9,9 +9,11 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
-import Inventory from './Pages/Inventory/Inventory';
+import ManageInventory from './Pages/ManageInventory/ManageInventory';
 import ItemDetails from './Pages/ItemDetails/ItemDetails';
 import { ToastContainer } from 'react-toastify';
+import AddItem from './Pages/AddItem/AddItem';
+import ManageItems from './Pages/ManageItems/ManageItems';
 
 
 function App() {
@@ -21,9 +23,13 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/inventory' element={<Inventory></Inventory>}></Route>
-        <Route path='home/inventoryItem/:itemId' element={<ItemDetails></ItemDetails>}></Route>
-        <Route path='/inventory/inventoryItem/:itemId' element={
+        <Route path='/manage' element={<ManageInventory></ManageInventory>}></Route>
+        <Route path='home/inventoryItem/:itemId' element={
+          <RequireAuth>
+            <ItemDetails></ItemDetails>
+          </RequireAuth>
+        }></Route>
+        <Route path='/manage/inventoryItem/:itemId' element={
           <RequireAuth>
             <ItemDetails></ItemDetails>
           </RequireAuth>}>
@@ -31,6 +37,16 @@ function App() {
         <Route path='/inventoryItem/:itemId' element={
           <RequireAuth>
             <ItemDetails></ItemDetails>
+          </RequireAuth>}>
+        </Route>
+        <Route path='/addItem' element={
+          <RequireAuth>
+            <AddItem></AddItem>
+          </RequireAuth>}>
+        </Route>
+        <Route path='/manageItem' element={
+          <RequireAuth>
+            <ManageItems></ManageItems>
           </RequireAuth>}>
         </Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>

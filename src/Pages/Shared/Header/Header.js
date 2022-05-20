@@ -21,10 +21,17 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto">
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/inventory">Inventory</Nav.Link>
+                            <Nav.Link as={Link} to="/manage">Manage Inventory</Nav.Link>
                             <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
                         </Nav>
                         <Nav>
+                            {
+                                user && <>
+                                    <Nav.Link as={Link} to="/addItem">Login</Nav.Link>
+                                    <Nav.Link as={Link} to="/manageItem">Login</Nav.Link>
+
+                                </>
+                            }
                             {
                                 user ?
                                     <button onClick={handleSignOut} className='btn btn-link text-primary bg-white text-decoration-none'> Sign Out</button>

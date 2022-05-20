@@ -29,6 +29,11 @@ const ItemDetails = () => {
                     <button className='btn btn-primary'>Manage Inventories</button>
                 </Link>
             </div>
+            <div className='m-5'>
+                <Link to='/addItem'>
+                    <button className='btn btn-primary'>Add Item</button>
+                </Link>
+            </div>
         </div>
     );
 };

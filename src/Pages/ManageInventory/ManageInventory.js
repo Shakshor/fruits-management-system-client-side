@@ -1,10 +1,10 @@
 import React from 'react';
 import useItems from '../../hooks/useItems';
 import InventoryItem from '../InventoryItem/InventoryItem';
-import './Inventory.css';
+import './ManageInventory.css';
 
 
-const Inventory = () => {
+const ManageInventory = () => {
     // custom hook
     const [items, setItems] = useItems();
 
@@ -13,11 +13,13 @@ const Inventory = () => {
             <h2>Inventory Page: {items.length}</h2>
             <div className='items-area'>
                 {
-                    items.map(item => <InventoryItem key={item._id} item={item}></InventoryItem>)
+                    items.map(item => <InventoryItem key={item._id} item={item}>
+                        <button></button>
+                    </InventoryItem>)
                 }
             </div>
         </div>
     );
 };
 
-export default Inventory;
+export default ManageInventory;
