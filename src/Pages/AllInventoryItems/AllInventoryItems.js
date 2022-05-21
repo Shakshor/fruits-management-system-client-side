@@ -6,7 +6,7 @@ const AllInventoryItems = ({ item }) => {
     const { _id, name, img, description, price, quantity } = item;
 
     const [items, setItems] = useItems();
-  
+
 
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');

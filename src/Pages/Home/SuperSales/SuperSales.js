@@ -4,7 +4,7 @@ import img from '../../../images/sales/sales.avif';
 
 const SuperSales = () => {
     return (
-        <section className='sales-area'>
+        <section className='sales-area mb-5'>
             <div className="sales-details">
                 <h1 className='text-primary'>Summer Season<br></br>Fresh Organic Fruits</h1>
                 <p>UpTo 25% Off</p>

@@ -25,7 +25,7 @@ const Banner = () => {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className=""
+                    className="d-block img-fluid"
                     src={bg1}
                     alt="Second slide"
                 />
@@ -37,7 +37,7 @@ const Banner = () => {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className=""
+                    className="d-block img-fluid"
                     src={bg1}
                     alt="Third slide"
                 />
