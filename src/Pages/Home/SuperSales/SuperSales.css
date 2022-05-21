@@ -1,0 +1,51 @@
+.sales-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 50px 15px 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.sales-details {
+    width: 50%;
+    text-align: left;
+}
+
+.sales-title {
+    color: green;
+}
+
+.sales-pic {
+    width: 40%;
+}
+
+.sales-pic img {
+    width: 80%;
+    padding-left: 10px;
+}
+
+
+/* --------- Media Queries ----------- */
+/* -------- Mobile Devices ----------- */
+
+@media only screen and (max-width:576px) {
+
+    /* --- sales area ------- */
+    .sales-area {
+        flex-direction: column-reverse;
+    }
+
+    .sales-pic {
+        width: 80%;
+    }
+
+    .sales-pic img {
+        margin-bottom: 20px;
+    }
+
+    .sales-details {
+        width: 80%;
+        text-align: left;
+    }
+}

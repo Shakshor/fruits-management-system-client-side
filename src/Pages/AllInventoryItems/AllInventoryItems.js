@@ -1,8 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useItems from '../../hooks/useItems';
 
-const ManageItems = () => {
+const AllInventoryItems = ({ item }) => {
+    const { _id, name, img, description, price, quantity } = item;
+
     const [items, setItems] = useItems();
+  
 
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
@@ -21,15 +25,16 @@ const ManageItems = () => {
     }
 
     return (
-        <div className='w-50 mx-auto'>
-            <h2>Delete Item..</h2>
-            {
-                items.map(item => <div key={item._id}>
-                    <h5>{item.name} <button onClick={() => handleDelete(item._id)}>X</button></h5>
-                </div>)
-            }
+        <div>
+            <div className='selected-item'>
+                <img src={img} />
+                <h4>{name}</h4>
+                <p><small>{description}</small></p>
+                <p>Price: {price}</p>
+                <button className='btn btn-primary' onClick={() => handleDelete(_id)}>Delete</button>
+            </div>
         </div>
     );
 };
 
-export default ManageItems;
+export default AllInventoryItems;
