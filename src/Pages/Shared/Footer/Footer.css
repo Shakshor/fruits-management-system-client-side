@@ -1,0 +1,50 @@
+footer {
+    background-color: #24262b;
+    height: 30vh;
+    padding: 30px;
+    color: #bbbbbb;
+    margin-top: auto;
+}
+
+.footer-item {
+    text-align: center;
+}
+
+.footer-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-item ul li a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #bbbbbb;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-item ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+
+/* --------- Media Queries ----------- */
+/* -------- Mobile Devices ----------- */
+@media only screen and (max-width:576px) {
+    footer {
+        height: 58vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-item {
+        text-align: center;
+    }
+
+    footer p {
+        margin-left: 40px;
+    }
+
+}
