@@ -1,0 +1,51 @@
+.not-found-area {
+    margin: 20px;
+    border-radius: 20px;
+    min-height: 85vh;
+    background-image: linear-gradient(150deg, #292e91, #4ca9df);
+}
+
+.not-found-container {
+    width: 90%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+}
+
+.not-found-area h1 {
+    font-size: 160px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+    background: url(../../../images/social/bg1.jpg) center no-repeat;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.not-found-area h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    background: linear-gradient(#ae8ba1, #f2ecb6);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.back-btn {
+    margin-top: 70px;
+    border: none;
+    width: 300px;
+    border-radius: 25px;
+    padding: 15px;
+    text-transform: uppercase;
+    background: #e55039aa;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: white;
+    transition: 0.4s;
+}
+
+.back-btn:hover {
+    background: #e55039;
+}
