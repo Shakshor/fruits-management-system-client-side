@@ -11,28 +11,13 @@ const MyItems = () => {
 
     useEffect(() => {
         const email = user?.email;
-        fetch(`http://localhost:5000/myItem?${email}`)
+        fetch(`https://fruits-management-server.herokuapp.com/myItem?${email}`)
             .then(res => res.json())
             .then(data => setMyItems(data))
     }, [user]);
     console.log(myItems);
 
-    // delete the item
-    const handleDelete = id => {
-        const proceed = window.confirm('Are you sure?');
-        if (proceed) {
-            const url = `http://localhost:5000/item/${id}`;
-            fetch(url, {
-                method: 'DELETE',
-            })
-                .then(res => res.json())
-                .then(data => {
-                    console.log(data);
-                    const remainingItem = myItems.filter(item => item._id !== id);
-                    setMyItems(remainingItem);
-                })
-        }
-    }
+
 
     return (
         <div>

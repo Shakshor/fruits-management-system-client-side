@@ -6,7 +6,7 @@ const useItemDetails = itemId => {
 
     // loading the item data
     useEffect(() => {
-        const url = `http://localhost:5000/item/${itemId}`;
+        const url = `https://fruits-management-server.herokuapp.com/item/${itemId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));

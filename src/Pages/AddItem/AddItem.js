@@ -13,7 +13,7 @@ const AddItem = () => {
 
 
         // send the data to the server
-        const url = `http://localhost:5000/item`;
+        const url = `https://fruits-management-server.herokuapp.com/item`;
         fetch(url, {
             method: 'POST',
             body: JSON.stringify(data),
@@ -31,7 +31,7 @@ const AddItem = () => {
 
 
         // For my item
-        fetch(`http://localhost:5000/myItem`, {
+        fetch(`https://fruits-management-server.herokuapp.com/myItem`, {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

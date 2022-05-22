@@ -7,10 +7,9 @@ const ItemDetails = () => {
     const { itemId } = useParams();
     const [input, setInput] = useState('');
     const [item, setItem] = useState({});
-    // const [agree, setAgree] = useState(false);
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${itemId}`;
+        const url = `https://fruits-management-server.herokuapp.com/item/${itemId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));
@@ -25,7 +24,7 @@ const ItemDetails = () => {
         // console.log(quantity);
         const updatedDetail = { quantity };
         // console.log(updatedDetail);
-        fetch(`http://localhost:5000/item/${itemId}`, {
+        fetch(`https://fruits-management-server.herokuapp.com/item/${itemId}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',
@@ -49,7 +48,7 @@ const ItemDetails = () => {
         // console.log(quantity);
         const updatedDetail = { quantity };
         console.log(updatedDetail);
-        fetch(`http://localhost:5000/item/${itemId}`, {
+        fetch(`https://fruits-management-server.herokuapp.com/item/${itemId}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',
@@ -73,8 +72,8 @@ const ItemDetails = () => {
                 <p>Quantity: {item.quantity}</p>
                 <button onClick={() => decreaseQuantity(itemId)} className='btn btn-primary'>Delivered</button>
                 <br></br>
-                <input className='my-3' value={input} onInput={e => { setInput(e.target.value); }} type="text" name='text' placeholder='Restock The Item' />
-                <button onClick={() => increaseQuantity(itemId)} className='btn btn-primary ms-4'>Add to Stock</button>
+                <input className='my-3' value={input} onInput={e => { setInput(e.target.value); }} type="text" name='text' autoComplete='off' placeholder='Restock The Item' />
+                <button disabled={!input} onClick={() => increaseQuantity(itemId)} className='btn btn-primary ms-4'>Add to Stock</button>
 
             </div>
 
