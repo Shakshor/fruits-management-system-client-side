@@ -1,0 +1,8 @@
+.manage-items {
+    margin: 20px;
+    padding: 10px 0;
+    border: 2px solid green;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}

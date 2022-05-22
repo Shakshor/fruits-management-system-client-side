@@ -1,4 +1,29 @@
 .selected-item {
-    border: 2px solid blue;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border-radius: 10px;
+    height: 100%;
+}
+
+.selected-item img {
+    margin: 0 0 20px 55px;
+    border-radius: 5px;
+}
+
+.selected-item .selected-item-details {
+    padding-left: 55px;
+}
+
+
+/* --------- Media Queries ----------- */
+/* -------- Mobile Devices ----------- */
+
+@media only screen and (max-width:576px) {
+    .selected-item img {
+        margin-left: 20px;
+    }
+
+    .selected-item .selected-item-details {
+        padding-left: 30px;
+    }
 }

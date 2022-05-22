@@ -3,63 +3,63 @@
         "_id": "628297a95cec8230f5077b89",
         "name": "apple",
         "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
-        "description": "lorem20",
-        "price": 200,
-        "quantity": 2,
-        "supplier": "Pran Limited"
+        "description": "Apples are an incredibly nutritious fruit that offers multiple health benefits. They're rich in fiber and antioxidants",
+        "price": 120,
+        "quantity": 10,
+        "supplier": "Alamin"
     },
     {
         "_id": "628297a96846749bbbafaf32",
-        "name": "mango",
-        "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
-        "description": "lorem20",
-        "price": 200,
-        "quantity": 2,
-        "supplier": "Pran Limited"
+        "name": "Green Apple",
+        "img": "https://i.ibb.co/Nn8qmg6/green-Applejpg.jpg",
+        "description": "Apples are an incredibly nutritious fruit",
+        "price": 140,
+        "quantity": 8,
+        "supplier": "Mr Franky"
     },
     {
         "_id": "628297a98c6a12184ebea1e9",
-        "name": "mango",
-        "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
-        "description": "lorem20",
-        "price": 200,
-        "quantity": 2,
-        "supplier": "Pran Limited"
+        "name": "Mango",
+        "img": "https://i.ibb.co/n6nLk0j/mango.jpg",
+        "description": "Chapainawabganj is no more the dominating hub for producing mangoes in Bangladesh and neither is Dinajpur for litchis",
+        "price": 50,
+        "quantity": 20,
+        "supplier": "Arif Hossain"
     },
     {
         "_id": "628297a99c89d5381a7bfe49",
-        "name": "mango",
-        "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
-        "description": "lorem20",
-        "price": 200,
-        "quantity": 2,
-        "supplier": "Pran Limited"
+        "name": "pepper",
+        "img": "https://i.ibb.co/QFSSRQC/pepper.jpg",
+        "description": "red peppers pack the most nutrition, because they've been on the vine the longest",
+        "price": 60,
+        "quantity": 40,
+        "supplier": "Abdur Rahim"
     },
     {
         "_id": "628297a93bfb24dd87270c0d",
-        "name": "mango",
-        "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
-        "description": "lorem20",
-        "price": 200,
-        "quantity": 2,
-        "supplier": "Pran Limited"
+        "name": "broccoli",
+        "img": "https://i.ibb.co/100qkcL/broccoli.jpg",
+        "description": "Broccoli (Brassica oleracea var. italica) is an edible green plant in the cabbage family",
+        "price": 70,
+        "quantity": 7,
+        "supplier": "Abdul Karim"
     },
     {
         "_id": "628297a91a961d3c97628cfb",
-        "name": "mango",
-        "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
-        "description": "lorem20",
-        "price": 200,
-        "quantity": 2,
-        "supplier": "Pran Limited"
+        "name": "Banana",
+        "img": "https://i.ibb.co/7Q6X5CC/banana.webp",
+        "description": "Bananas are a good source of several vitamins and minerals, especially potassium",
+        "price": 20,
+        "quantity": 12,
+        "supplier": "Sakib"
     },
     {
         "_id": "628297a9594f205312ea0b9d",
-        "name": "mango",
-        "img": "https://i.ibb.co/BVmPBRh/apple.jpg",
-        "description": "lorem20",
-        "price": 200,
-        "quantity": 2,
+        "name": "papaya",
+        "img": "https://i.ibb.co/ckTT9NT/papaya.webp",
+        "description": "Papayas contain high levels of antioxidants vitamin A, vitamin C, and vitamin E.",
+        "price": 50,
+        "quantity": 5,
         "supplier": "Pran Limited"
     }
 ]

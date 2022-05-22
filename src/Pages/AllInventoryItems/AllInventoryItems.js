@@ -28,10 +28,12 @@ const AllInventoryItems = ({ item }) => {
         <div>
             <div className='selected-item'>
                 <img src={img} />
-                <h4>{name}</h4>
-                <p><small>{description}</small></p>
-                <p>Price: {price}</p>
-                <button className='btn btn-primary' onClick={() => handleDelete(_id)}>Delete</button>
+                <div className='selected-item-details'>
+                    <h4>{name}</h4>
+                    <p><small>{description}</small></p>
+                    <p>Price: {price}</p>
+                    <button className='btn btn-primary mb-3 w-75' onClick={() => handleDelete(_id)}>Delete</button>
+                </div>
             </div>
         </div>
     );

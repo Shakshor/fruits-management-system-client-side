@@ -12,7 +12,7 @@ const ManageInventory = () => {
 
     return (
         <div className='container'>
-            <h2>Inventory Page: {items.length}</h2>
+            <h2 className=' text-primary text-center'>Inventory: {items.length}</h2>
             <div className='items-area'>
                 {
                     items.map(item => <AllInventoryItems key={item._id} item={item}></AllInventoryItems>)

@@ -2,5 +2,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    border: 2px solid red;
+}
+
+/* --------- Media Queries ----------- */
+/* -------- Mobile Devices ----------- */
+@media only screen and (max-width:576px) {
+    .items-area {
+        grid-template-columns: 1fr;
+    }
 }

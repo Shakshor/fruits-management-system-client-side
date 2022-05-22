@@ -17,15 +17,15 @@ const Home = () => {
             <h2 className='text-center'>Welcome To Fruit Management System</h2>
             <Banner></Banner>
             <Categories></Categories>
-            <section className='container'>
-                <h2>Items</h2>
+            <section className='container p-4'>
+                <h2 className='text-primary text-center m-5'>Products</h2>
                 <div className='items-area'>
                     {
                         newItems.map(item => <InventoryItem key={item._id} item={item}></InventoryItem>)
                     }
                 </div>
-                <div className='text-center'>
-                    <button className='btn btn-primary m-5 p-2 w-25' onClick={() => navigate('/manage')}>Manage Inventory</button>
+                <div className='text-center manage-inventory'>
+                    <button className='btn btn-primary m-4 m-lg-5 p-lg-2 see-all-btn' onClick={() => navigate('/manage')}>Manage Inventory</button>
                 </div>
             </section>
             <SuperSales></SuperSales>

@@ -1,15 +1,12 @@
-/* .see-all-btn {
-    border: none;
+.manage-inventory .see-all-btn {
     width: 300px;
-    padding: 15px;
-    margin: 20px 50px;
-    font-size: 18px;
-    border-radius: 25px;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #e55039aa;
 }
 
-.see-all-btn:hover {
-    background-color: #e55039;
-} */
+
+/* --------- Media Queries ----------- */
+/* -------- Mobile Devices ----------- */
+@media only screen and (max-width:576px) {
+    .manage-inventory .see-all-btn {
+        width: 200px;
+    }
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 import useItems from '../../hooks/useItems';
+import './ManageItems.css';
 
 const ManageItems = () => {
     const [items, setItems] = useItems();
-
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
@@ -22,10 +22,11 @@ const ManageItems = () => {
 
     return (
         <div className='w-50 mx-auto'>
-            <h2>Delete Item..</h2>
+            <h2 className='ms-3 text-primary'>Manage Items</h2>
             {
-                items.map(item => <div key={item._id}>
-                    <h5>{item.name} <button onClick={() => handleDelete(item._id)}>X</button></h5>
+                items.map(item => <div key={item._id} className='manage-items'>
+                    <h5>{item?.name} {item?.Name}  <button className='btn btn-primary ms-3' onClick={() => handleDelete(item._id)}>Delete</button></h5>
+
                 </div>)
             }
         </div>

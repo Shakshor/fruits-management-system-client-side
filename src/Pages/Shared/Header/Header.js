@@ -21,7 +21,7 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto">
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/manage">Manage Inventory</Nav.Link>
+                            <Nav.Link as={Link} to="/manage">Manage_Inventory</Nav.Link>
                             <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
                         </Nav>
                         <Nav>
@@ -29,6 +29,7 @@ const Header = () => {
                                 user && <>
                                     <Nav.Link as={Link} to="/addItem">AddItem</Nav.Link>
                                     <Nav.Link as={Link} to="/manageItem">ManageItem</Nav.Link>
+                                    <Nav.Link as={Link} to="/myItem">MyItems</Nav.Link>
 
                                 </>
                             }

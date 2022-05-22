@@ -1,0 +1,9 @@
+/* --------- Media Queries ----------- */
+/* -------- Mobile Devices ----------- */
+
+@media only screen and (max-width:576px) {
+    .category {
+        margin-left: 60px;
+        margin-bottom: 30px;
+    }
+}

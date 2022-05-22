@@ -12,11 +12,14 @@ const InventoryItem = ({ item }) => {
 
     return (
         <div className='selected-item'>
-            <img src={img} />
-            <h4>{name}</h4>
-            <p><small>{description}</small></p>
-            <p>Price: {price}</p>
-            <button className='btn btn-primary' onClick={() => navigateToItemDetails(_id)}>Update</button>
+            <img className='img-fluid' src={img} />
+            <div className='selected-item-details'>
+                <h4>{name}</h4>
+                <p><small>{description}</small></p>
+                <p>Price: {price}</p>
+                <button className=' btn btn-primary mb-3 w-75' onClick={() => navigateToItemDetails(_id)}>Update</button>
+            </div>
+
         </div>
     );
 };
