@@ -14,11 +14,10 @@ const Home = () => {
 
     return (
         <div>
-            <h2 className='text-center'>Welcome To Fruit Management System</h2>
             <Banner></Banner>
             <Categories></Categories>
             <section className='container p-4'>
-                <h2 className='text-primary text-center m-5'>Products</h2>
+                <h2 className='text-primary text-center m-4 fs-1 ps-5'>Products</h2>
                 <div className='items-area'>
                     {
                         newItems.map(item => <InventoryItem key={item._id} item={item}></InventoryItem>)

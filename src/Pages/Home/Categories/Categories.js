@@ -8,7 +8,7 @@ import cat4 from '../../../images/category/cat4.webp';
 const Categories = () => {
     return (
         <div className='container me-2'>
-            <h2 className='text-center text-primary fs-2 p-3 m-sm-3 m-lg-4'>Top Category</h2>
+            <h2 className='text-center text-primary fs-1 m-sm-3 m-lg-5 pe-5'>Top Category</h2>
             <div className="row">
                 <div className='d-lg-flex'>
                     <div className="col-12 col-md-3 category">
