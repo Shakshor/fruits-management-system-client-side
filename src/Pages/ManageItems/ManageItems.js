@@ -7,7 +7,7 @@ const ManageItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `https://fruits-management-server.herokuapp.com/item/${id}`;
+            const url = `https://fruits-mangament-server.onrender.com/item/${id}`;
             fetch(url, {
                 method: 'DELETE',
             })

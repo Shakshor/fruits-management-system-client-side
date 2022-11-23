@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useParams } from 'react-router-dom';
 import auth from '../../firebase.init';
 import MyItem from '../MyItem/MyItem';
 
@@ -11,7 +10,7 @@ const MyItems = () => {
 
     useEffect(() => {
         const email = user?.email;
-        fetch(`https://fruits-management-server.herokuapp.com/myItem?${email}`)
+        fetch(`https://fruits-mangament-server.onrender.com/myItem?${email}`)
             .then(res => res.json())
             .then(data => setMyItems(data))
     }, [user]);

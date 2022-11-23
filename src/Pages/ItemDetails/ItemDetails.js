@@ -9,7 +9,7 @@ const ItemDetails = () => {
     const [item, setItem] = useState({});
 
     useEffect(() => {
-        const url = `https://fruits-management-server.herokuapp.com/item/${itemId}`;
+        const url = `https://fruits-mangament-server.onrender.com/item/${itemId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));
@@ -24,7 +24,7 @@ const ItemDetails = () => {
         // console.log(quantity);
         const updatedDetail = { quantity };
         // console.log(updatedDetail);
-        fetch(`https://fruits-management-server.herokuapp.com/item/${itemId}`, {
+        fetch(`https://fruits-mangament-server.onrender.com/item/${itemId}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',
@@ -48,7 +48,7 @@ const ItemDetails = () => {
         // console.log(quantity);
         const updatedDetail = { quantity };
         console.log(updatedDetail);
-        fetch(`https://fruits-management-server.herokuapp.com/item/${itemId}`, {
+        fetch(`https://fruits-mangament-server.onrender.com/item/${itemId}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',
